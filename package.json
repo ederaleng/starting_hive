@@ -1,0 +1,32 @@
+{
+  "name": "starting_hive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app/index.js",
+    "db:migrate": "npx knex migrate:latest --knexfile ./database/knexfile.js",
+    "db:seed": "npx knex seed:run --knexfile ./database/knexfile.js",
+    "dev": "nodemon ./app/index.js"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "author": "Ederaleng",
+  "dependencies": {
+    "@splinterlands/hive-interface": "^2.1.2",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.2",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "objection": "^2.2.2",
+    "pg": "^8.3.0",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
